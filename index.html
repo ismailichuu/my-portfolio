@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ismail C N</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+    <link rel="shortcut icon" href="images/m.png" type="image/x-icon">
+
+<body>
+    <!--Full navbar potion-->
+    <header class="header">
+        <a href="#" class="logo"><span>Mohammed Ismail C N</span></a> <!--logo-with name-->
+        <!--Nav headers-->
+        <ul class="nav-links">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#project">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <!--github button-->
+            <button class="visit-btn" onclick="toGithub()">Visit Github</button>
+        </ul>
+        <i class="fa-regular fa-bars" id="toggle-bar"></i>
+    </header>
+    <!--Home Section-->
+    <section id="home" class="home">
+        <!--Home image-->
+        <div class="home-container">
+            <img src="./images/mypic_croped.jpg" alt="">
+        </div>
+        <!--Home Heads-->
+        <div class="info-box">
+            <div class="text">
+                <h3>Hi, I'm</h3>
+                <h1>Mohammed Ismail C N</h1>
+                <span>MERN Stack Developer</span>
+            </div>
+            <!--Home buttons-->
+            <div class="btn-group">
+                <a href="./documents/Mohammed Ismail C N.pdf" download>
+                    <div class="btn">Download C V</div>
+                </a>
+                <div class="btn" onclick="toContact()">Contact</div>
+            </div>
+            <!--social links-->
+            <div class="socials">
+                <i class="fa-brands fa-github" onclick="toGithub()"></i>
+                <i class="fa-brands fa-linkedin" id="linkdn"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="about-col">
+                        <!--About-head-->
+                        <h1 class="section-title">About Me</h1>
+                        <p>Driven by a passion for programming, I am a student currently pursuing my skills in both
+                            frontend and backend development. Based in Kerala, India, I am proficient in JavaScript and
+                            eager to leverage my programming skills for a rewarding career in the tech field. I am
+                            committed to utilizing my analytical abilities to solve complex challenges and create
+                            impactful solutions.</p>
+                        <!--Button Area-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Designing</span><br>Responsive Design</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Backend Development</span><br>Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024/Dec - Present</span><br>Student at Brototype</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>CEH V11 from Redteam Hackers Academy</li>
+                                <li><span>2021</span><br>ITI COPA from GOVT ITI Vengoor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service Section-->
+    <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+        <!--Service Card-->
+        <div class="service-info">
+            <div class="grid">
+                <!--Card 1-->
+                <div class="grid-card">
+                    <i class="fa-solid fa-browser"></i>
+                    <span>Web-Designing</span>
+                    <p>Responsive, modern websites using HTML, CSS, JavaScript.</p>
+                </div>
+                <!--Card 2-->
+                <div class="grid-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Database Management</span>
+                    <p>Efficient and secure database design and management using MySQL, PostgreSQL, MongoDB, or
+                        Firebase.</p>
+                </div>
+                <!--Card 3-->
+                <div class="grid-card">
+                    <i class="fa-thin fa-window-restore"></i>
+                    <span>Custom API Development</span>
+                    <p>Building RESTful APIs with Node.js, Express.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Projects section-->
+    <section class="project" id="project">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="project-grid">
+            <!--First card-->
+            <div class="project-card">
+                <img src="./images/starbucks.png" alt="starbucks">
+                <h3>Starbucks Website-Clone</h3>
+                <p>This is a responsive design using Bootstrap and Media Quries.</p>
+                <div class="btn-group">
+                    <div class="btn" id="starbucks-demo">Live Demo</div>
+                    <div class="btn" id="starbucks-repo">Github Repo</div>
+                </div>
+            </div>
+            <!--Second Card-->
+            <div class="project-card">
+                <img src="./images/tesla.png" alt="tesla">
+                <h3>Tesla Website-Clone</h3>
+                <p>This is a Static design using HTML and CSS.</p>
+                <div class="btn-group">
+                    <div class="btn" id="tesla-demo">Live Demo</div>
+                    <div class="btn" id="tesla-repo">Github Repo</div>
+                </div>
+            </div>
+            <!--Third Card-->
+            <div class="project-card">
+                <img src="./images/MC-donalds.png" alt="MC-donalds">
+                <h3>MC-donalds Website-Clone</h3>
+                <p>This is a Static design using HTML and CSS.</p>
+                <div class="btn-group">
+                    <div class="btn" id="mc-demo">Live Demo</div>
+                    <div class="btn" id="mc-repo">Github Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
+        <div class="container">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="row contact">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i> ismailichu2001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+918157988287</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/ismailichuu"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-ismail-c-n-016571227/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="contact-form">
+                        <input type="text" name="Name" placeholder="Your Name" id="name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--Copyright-->
+    <div class="copyright">
+        <p>©All Rights Reserved | Mohammed Ismail C N</p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
